@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression_Suit" thread-count="10" parallel="classes">
+	<listeners>
+		 <listener class-name = "ListenersTestNG"></listener>
+		 
+		<listener class-name="ListenerPackage.AllureListener" />
+
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="ChromeTest">
+		<parameter name="Environment" value="Staging Server" />
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="Testcases_Package.TestCase_RegisterUser"></class>
+		</classes>
+	</test>
+	<test name="ReTest">
+		<parameter name="Environment" value="Demo Server" />
+		<parameter name="browser" value="Chrome" /> 
+		<classes>
+			<class name="Testcases_Package.ValidateLoginPage"></class>
+		</classes>
+	</test>
+
+	<test name="OrderTest">
+		<parameter name="Environment" value="Demo Server" />
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="Testcases_Package.TestCases_OrderAndcart_Page"></class>
+		</classes>
+	</test>
+
+	<test name="SanityTest">
+		<parameter name="Environment" value="Demo Server" />
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="Testcases_Package.Testcases_ProductReviews"></class>
+		</classes>
+	</test>
+
+</suite>

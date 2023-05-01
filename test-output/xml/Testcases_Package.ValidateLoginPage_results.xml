@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.781">
+  <properties />
+  
+  
+            <testcase name="Testcase_VerifyLoginwith_bothWrongEmailandPassword_SignupNewForAccount" time="4.781" classname="Testcases_Package.ValidateLoginPage" />
+      
+</testsuite>
