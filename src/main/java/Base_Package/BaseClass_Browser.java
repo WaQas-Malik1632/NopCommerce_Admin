@@ -61,5 +61,8 @@ public class BaseClass_Browser
 		FileUtils.copyFile(srcfile,new File(".//Screenshot//" +formattedDate+filename+".png"));
 		return webdriver;
 	}
+    public static WebDriver getDriver() {
+        return null;
+    }
 
 }
